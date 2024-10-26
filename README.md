@@ -34,6 +34,7 @@ Le projet utilise plusieurs endpoints REST, accessibles via **Postman**, pour g�
 **1. Création de Compte**
 * **Endpoint :** POST /account/create
 * **Description :** Crée un compte avec un solde initial spécifié.
+
 ![image](https://github.com/user-attachments/assets/c7885e4c-6a6e-4ff0-987b-740b6dfbcdaa)
 
 **2. Journal d'Événements dans la Base de Données MySQL**
