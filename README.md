@@ -6,11 +6,11 @@ Il propose des API REST permettant d'interagir avec les comptes, et utilise un *
 Le projet gère les opérations typiques de gestion de compte à travers une approche CQRS, séparant **les commandes (Création, Activation, Crédit, Débit)** de la lecture des données, qui s'appuie sur l’Event Store pour refléter l’état actuel des comptes.
 
 ### Fonctionnalités :
-**1. Création de Compte :** Initialisation d'un compte avec un identifiant unique et un solde initial.
-**2. Activation de Compte :** Activation du compte après sa création.
-**3. Crédit de Compte :** Ajout de fonds au compte.
-**4. Débit de Compte :** Retrait de fonds si le solde le permet.
-**5. Event Store :** Journalisation de chaque événement lié aux changements de compte.
+**1. Création de Compte :** Initialisation d'un compte avec un identifiant unique et un solde initial.  
+**2. Activation de Compte :** Activation du compte après sa création.  
+**3. Crédit de Compte :** Ajout de fonds au compte.  
+**4. Débit de Compte :** Retrait de fonds si le solde le permet.  
+**5. Event Store :** Journalisation de chaque événement lié aux changements de compte.  
 
 --- 
 
