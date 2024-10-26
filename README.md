@@ -39,33 +39,39 @@ Le projet utilise plusieurs endpoints REST, accessibles via **Postman**, pour g�
 
 **2. Journal d'Événements dans la Base de Données MySQL**
 * **Description :** Après la création d’un compte, l'événement est enregistré dans la base de données MySQL sous la table **domain_name_entry**, en journalisant **l'événement "AccountCreated"** et tous les autres événements associés au compte.
+
 ![image](https://github.com/user-attachments/assets/d79281a7-a4a8-45dc-906f-0077faacef4f)
 
 **3. Event Store - Événements de Création et d'Activation de Compte**
 * **Endpoint :** GET /eventStore
 * **Description :** Récupère les événements dans l'Event Store, affichant **l'événement AccountCreated suivi de AccountActivated**.
+
 ![image](https://github.com/user-attachments/assets/22e93a90-8b26-4c4c-afc6-aed85e868da8)
 
 **4. Crédit de Compte**
 * **Endpoint :** POST /account/credit
 * **Description :** Crédite le compte d'un montant spécifié.
+
 ![image](https://github.com/user-attachments/assets/34b7b797-b3e1-442e-88bc-7372382c78bc)
 ![image](https://github.com/user-attachments/assets/a7a77b3f-8f6a-4624-8f8b-c054908ea800)
 
 **5. Débit de Compte**
 * **Endpoint :** POST /account/debit
 * **Description :** Débite le compte d'un montant spécifié.
+
 ![image](https://github.com/user-attachments/assets/2b9dd8a8-def4-4729-9965-98342ec60933)
 ![image](https://github.com/user-attachments/assets/6d9897d5-e5a4-4987-b0dd-45d58f2e4f6b)
 
 **6. Débit Échoué en Raison d’un Solde Insuffisant**
 * **Endpoint :** POST /account/debit
 * **Description :** Tente de débiter un montant supérieur au solde actuel. La requête échoue en raison de fonds insuffisants.
+
 ![image](https://github.com/user-attachments/assets/346f7024-735c-42cd-b9b9-1b99612d6377)
 ![image](https://github.com/user-attachments/assets/87656085-6546-4f82-928b-911c387a85a2)
 
 **7. Création de Comptes Multiples**
 * **Description :** Démontre la création de plusieurs comptes, enregistrée dans la table account de MySQL.
+
 ![image](https://github.com/user-attachments/assets/4b53be5a-b1c7-4014-a3cb-f5b675f32235)
 ![image](https://github.com/user-attachments/assets/435afa5c-0551-47ed-9371-7d2267490c38)
 
